@@ -10,6 +10,6 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require jquery/jquery
+//= require jquery/dist/jquery
 //= require angular/angular
 //= require_tree .
