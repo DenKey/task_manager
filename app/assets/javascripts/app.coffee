@@ -1,2 +1,2 @@
-receta = angular.module('receta',[
+taskmanager = angular.module('taskmanager',[
 ])

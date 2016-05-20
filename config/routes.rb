@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'home#index'
+  root to: 'application#angular'
 
   scope :api do
     resources :projects do
