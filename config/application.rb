@@ -34,5 +34,7 @@ module TaskManager
     config.assets.paths << Rails.root.join("vendor","assets","bower_components")
     config.assets.paths << Rails.root.join("vendor","assets","bower_components","bootstrap-sass-official","assets","fonts")
     config.assets.precompile << %r(.*.(?:eot|svg|ttf|woff|woff2)$)
+    config.generators.assets = false
+    config.generators.helper = false
   end
 end

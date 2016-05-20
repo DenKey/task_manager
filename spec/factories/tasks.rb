@@ -1,5 +1,5 @@
 FactoryGirl.define do
-  factory :task do
+  factory :tasks do
     content "MyText"
     done false
     priority 1
