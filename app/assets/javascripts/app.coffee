@@ -1,2 +1,2 @@
-taskmanager = angular.module('taskmanager',[
+taskApp = angular.module('taskApp',[
 ])
