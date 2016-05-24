@@ -7,6 +7,15 @@
     =csrf_meta_tags
   %body{'ng-app'=>'taskApp'}
     .container-fluid
+      .col-md-8.col-md-offset-2
+        #header.row
+          %h1
+            Task Manager
+          %h3
+            Made by Denys Kriukov
       .row
-        .col-md-8.col-md-offset-2
-          .ui-view
+        .ui-view
+      .row
+        #copyright.text-center
+          %span
+            = link_to "© Denys Kriukov", "https://github.com/DenKey/resume", target: '_blank'
