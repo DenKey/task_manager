@@ -8,6 +8,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'bower-rails'
 gem 'haml-rails', '~> 0.9.0'
 gem 'responders', '~> 2.2'
+gem 'angular-rails-templates'
 
 group :postgres do
   gem 'pg'
