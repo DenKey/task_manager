@@ -13,7 +13,14 @@ taskApp = angular.module('taskApp',[
       .state('projects',
         url: '/projects',
         templateUrl: 'projects.html'
-        controller: 'ProjectsCtrl')
+        controller: 'ProjectsCtrl',
+        resolve: {
+          postPromise: [
+            'projects',
+            (projects) ->
+              return projects.all()
+          ]
+        })
 
     $urlRouterProvider.otherwise 'home'
 ])

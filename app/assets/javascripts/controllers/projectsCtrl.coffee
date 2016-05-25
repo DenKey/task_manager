@@ -1,5 +1,6 @@
 angular.module('taskApp').controller 'ProjectsCtrl',[
-    '$scope'
-    ($scope) ->
-      $scope.projects = "5 projects"
+    '$scope',
+    'projects'
+    ($scope,projects) ->
+      $scope.projects = projects.projects
 ]

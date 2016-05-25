@@ -1,0 +1,26 @@
+%div{"ng-repeat"=>"project in projects"}
+  .list-panel.panel.panel-primary{:id => "{{project.id}}"}
+    .panel-heading.clearfix
+      .pull-left
+        %span.icon.glyphicon.glyphicon-list-alt{ "aria-hidden" => "true" }
+      .pull-left
+        %h3{ :title => "{{project.description}}" }
+          = "{{project.title}}"
+      .pull-right
+        %span.icon-right.glyphicon.glyphicon-pencil{ "aria-hidden" => "true" }
+        |
+        %span.icon-right.glyphicon.glyphicon-trash{ "aria-hidden" => "true" }
+    #panel-body.panel-body
+      #inherit-panel-second.panel.panel-default
+        #inherit-panel-heading.panel-heading.clearfix
+          .pull-left
+            %span.glyphicon.glyphicon-plus{"aria-hidden" => "true"}
+          .input-group
+            = form_tag('/',method: :post,class: "form-horizontal") do
+              .input-group-btn
+                = text_field_tag :content, nil, class: "form-control", id: "todo-input"
+                = submit_tag "Add Task", class: "btn btn-success"
+        #inherit-panel-body.panel-body
+          .table-responsive
+            %table.table.table-hover
+              %tbody
