@@ -3,9 +3,8 @@ Rails.application.routes.draw do
 
   scope :api do
     resources :projects do
-      resources :tasks do
-        resources :comments
-      end
+      resources  :tasks
+      resources  :comments
     end
   end
 end

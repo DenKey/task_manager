@@ -9,6 +9,7 @@ gem 'bower-rails'
 gem 'haml-rails', '~> 0.9.0'
 gem 'responders', '~> 2.2'
 gem 'angular-rails-templates'
+gem 'angular_rails_csrf'
 
 group :postgres do
   gem 'pg'
