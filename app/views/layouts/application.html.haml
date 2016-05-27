@@ -6,7 +6,7 @@
     =javascript_include_tag 'application'
     =csrf_meta_tags
   %body{'ng-app'=>'taskApp'}
-    .container-fluid
+    .container
       .col-md-8.col-md-offset-2
       #header.row
         %h1
@@ -18,4 +18,4 @@
       .row
         #copyright.text-center
           %span
-            = link_to "© Denys Kriukov", "https://github.com/DenKey/resume", target: '_blank'
+            = link_to "GitHub", "https://github.com/DenKey/resume", target: '_blank'

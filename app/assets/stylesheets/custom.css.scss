@@ -74,10 +74,6 @@ html,body {
   }
 }
 
-#inherit-panel-body {
-
-}
-
 .icon {
   color: #333;
   font-size: 24px;
@@ -91,10 +87,6 @@ html,body {
   margin-bottom: 4px;
 }
 
-#todo-input {
-  width: 220%;
-}
-
 table {
   table-layout: fixed;
   word-wrap: break-word;
@@ -103,4 +95,18 @@ table {
 .nav-panel {
   margin: 20px;
   padding-bottom : 5% ;
+}
+
+.comments {
+  margin-left:5%;
+  margin-top: 10px;
+}
+
+.task {
+  margin-left: 10px;
+}
+
+.icon-task {
+  font-size: 14px;
+  padding-right: 10px;
 }
